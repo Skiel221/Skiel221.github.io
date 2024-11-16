@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTR | Personajes</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cards.css">
+    <!-- Page-Icon -->
+    <link rel="shortcut icon" href="../img/icono/icon-ctr.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="borde-logo">
+            <div class="logo-nav">
+                <img src="../img/navbar/logo.png" class="logo" onclick="reproducirAudio()" alt="logo">
+                <audio id="miAudio" src="../audio/crashlogosound.mp3"></audio>
+            </div>
+        </div>
+        <nav>
+            <a href="../../index.html"><img src="../img/navbar/flecha.png" alt="" class="flecha"></a>
+            <div class="borde-contacto">
+                <a href="contacto.html" class="btn-c">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contenido-pj">
+            <div class="row-contenido">
+                <div class="media-nombre">
+                    <h1 id="character-name-ex"></h1>
+                </div>
+                <div class="modelo-pj">
+                    <img id="character-img" alt="ModeloDelPersonaje">
+                </div>
+                <div class="info-pj">
+                    <h1 id="character-name" class="media-ocultar"></h1>
+                    <p class="text-p" id="character-biography"></p>
+                    <p class="text-p">Velocidad: <span id="character-speed"></span></p>
+                    <p class="text-p">Aceleracion: <span id="character-acceleration"></span></p>
+                    <p class="text-p">Giro: <span id="character-turn"></span></p>
+                </div>
+            </div>
+
+            <div class="roaster-pj">
+                <div class="pj" id="">
+                    <img src="../img/iconos-pj/Ntropy.png" alt="Ntropy" onclick="mostrarInformacionPersonaje(0)">
+                </div>
+                <div class="pj" id="">
+                    <img src="../img/iconos-pj/crash.png" alt="CrashBandicoot" onclick="mostrarInformacionPersonaje(1)">
+                </div>
+                <div class="pj" id="">
+                    <img src="../img/iconos-pj/cortex.png" alt="NeoCortex" onclick="mostrarInformacionPersonaje(2)">
+                </div>
+                <div class="pj" id="">
+                    <img src="../img/iconos-pj/tiny tiger.png" alt="TinyTiger" onclick="mostrarInformacionPersonaje(3)">
+                </div>
+                <div class="pj" id="">
+                    <img src="../img/iconos-pj/coco.png" alt="CocoBandicoot" onclick="mostrarInformacionPersonaje(4)">
+                </div>
+                <div class="pj" id="">
+                    <img src="../img/iconos-pj/pinstripe.png" alt="Pinstripe" onclick="mostrarInformacionPersonaje(5)">
+                </div>
+                <div class="pj" id="">
+                    <img src="../img/iconos-pj/ripperRoo.png" alt="RipperRoo" onclick="mostrarInformacionPersonaje(6)">
+                </div>
+                <div class="pj" id="">
+                    <img src="../img/iconos-pj/Ngin.png" alt="nGin" onclick="mostrarInformacionPersonaje(7)">
+                </div>
+                <div class="pj" id="">
+                    <img src="../img/iconos-pj/dingodile.png" alt="Dingodile" onclick="mostrarInformacionPersonaje(8)">
+                </div>
+                <div class="pj" id="">
+                    <img src="../img/iconos-pj/polar.png" alt="Polar" onclick="mostrarInformacionPersonaje(9)">
+                </div>
+                <div class="pj" id="">
+                    <img src="../img/iconos-pj/pura.png" alt="Pura" onclick="mostrarInformacionPersonaje(10)">
+                </div>
+                <div class="pj" id="">
+                    <img src="../img/iconos-pj/papuPapu.png" alt="PapuPapu" onclick="mostrarInformacionPersonaje(11)">
+                </div>
+                <div class="pj" id="">
+                    <img src="../img/iconos-pj/komodoJoe.png" alt="KomodoJoe" onclick="mostrarInformacionPersonaje(12)">
+                </div>
+                <div class="pj" id="">
+                    <img src="../img/iconos-pj/pentaPinguin.png" alt="PentaPinguin"
+                        onclick="mostrarInformacionPersonaje(13)">
+                </div>
+                <div class="pj" id="">
+                    <img src="../img/iconos-pj/fakeCrash.png" alt="Fake Crash"
+                        onclick="mostrarInformacionPersonaje(14)">
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/sonido.js"></script>
+    <script src="../js/personajes.js"></script>
+    <script>
+        mostrarInformacionPersonaje(1);
+    </script>
+
+</body>
+
+</html>

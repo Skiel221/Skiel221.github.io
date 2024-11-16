@@ -1,0 +1,84 @@
+body {
+    background-image: url('../img/gifs/gif-min.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.presentacion {
+    height: 75vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentacion img {
+    width: 350px;
+}
+
+.menu {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, .4);
+    box-shadow: 30px 20px 0px rgba(0, 0, 0, .4);
+    border: 8px solid rgba(130, 247, 255, .8);
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffd000;
+    text-shadow:
+        -2px -2px 0 #000,
+        /* Sombra en la esquina superior izquierda */
+        2px -2px 0 #000,
+        /* Sombra en la esquina superior derecha */
+        -2px 2px 0 #000,
+        /* Sombra en la esquina inferior izquierda */
+        2px 2px 0 #000;
+    /* Sombra en la esquina inferior derecha */
+
+    margin: 5px;
+    width: 290px;
+    height: 65px;
+    font-size: 50px;
+}
+
+.menu a:hover {
+    background-color: rgba(255, 217, 0, 0.6);
+    animation: desenfoque 1.5s infinite;
+}
+
+@keyframes desenfoque {
+    0% {
+        background-color: rgba(255, 217, 0, 0.692);
+    }
+
+    50% {
+        background-color: rgba(255, 217, 0, 0.281)
+    }
+
+    100% {
+        background-color: rgba(255, 217, 0, 0.692);
+    }
+}
+
+@media (max-width: 800px) {
+    .presentacion {
+        height: 100%;
+        flex-direction: column;
+    }
+}
